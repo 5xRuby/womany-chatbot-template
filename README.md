@@ -5,7 +5,7 @@ This is a Rails Template for Womany events.
 
 ## Usage
 
-```
+```bash
 rails new PROJECT_NAME -m https://raw.githubusercontent.com/5xRuby/womany-chatbot-template/master/rails_template.rb
 ```
 
@@ -13,7 +13,7 @@ rails new PROJECT_NAME -m https://raw.githubusercontent.com/5xRuby/womany-chatbo
 
 For development, add your Facebook Messenger `access_token` into `.env` file
 
-```
+```bash
 ACCESS_TOKEN=(YOUR_FAN_PAGE_ACCESS_TOKEN)
 APP_SECRET=(YOUR_FACEBOOK_APP_SECRET)
 # For first time setup, you may want to use `rake secret` to generate `VERIFY_TOKEN` for facebook.
@@ -26,7 +26,7 @@ After setup Facebook Messenger, go to Facebook App and verify Messenger's Webhoo
 
 An example file is put in `app/bot/message.rb`
 
-```
+```ruby
 include Facebook::Messenger
 
 Bot.on :message do |message|
