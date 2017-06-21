@@ -7,7 +7,7 @@ def current_directory
   @current_directory ||=
     if __FILE__ =~ %r{\Ahttps?://}
       tempdir = Dir.mktmpdir('womany-chatbot-template')
-      at_exit { FileUtils.remove_rentry(tempdir) }
+      at_exit { FileUtils.remove_entry(tempdir) }
       git clone: [
         '--quiet',
         'https://github.com/5xRuby/womany-chatbot-template',
