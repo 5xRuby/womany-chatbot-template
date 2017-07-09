@@ -50,7 +50,7 @@ after_bundle do
 
   copy_file 'config/initializers/bot.rb'
   copy_file 'app/bot/message.rb'
-  copy_file 'app/model/quick_reply.rb'
+  copy_file 'app/models/quick_reply.rb'
   copy_file 'lib/tasks/admin.rake'
   copy_file '.env'
 end
